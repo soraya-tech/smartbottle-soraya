@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartBottle — Slimme Drinkfles</title>
+  <meta name="description" content="Conceptsite voor SmartBottle — slimme drinkfles met hydratatie tracking">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">SB</div>
+      <div>
+        <div class="brand-name">SmartBottle</div>
+        <div class="brand-sub">Slimme drinkfles</div>
+      </div>
+    </div>
+
+    <nav>
+      <a data-page="home">Home</a>
+      <a data-page="product">Product</a>
+      <a data-page="specificaties">Specificaties</a>
+      <a data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero active">
+    <div class="card">
+      <h1>SmartBottle — Drink smarter, live healthier</h1>
+      <p class="muted">
+        Conceptsite voor een slimme waterfles met hydratatie-tracking en LED reminder.
+      </p>
+
+      <div class="card inner-card">
+        <h3>Demonstratie: drink-tracker</h3>
+
+        <label>
+          Dagelijks doel (ml):
+          <input type="number" id="goal" value="1000">
+        </label>
+
+        <div class="button-row">
+          <button class="btn" id="drink250">Drink 250 ml</button>
+          <button class="btn" id="drink500">Drink 500 ml</button>
+          <button class="btn secondary" id="reset">Reset</button>
+        </div>
+
+        <div class="button-row">
+          <input type="number" id="customDrink" placeholder="Bijv. 150 ml">
+          <button class="btn" id="addCustom">Toevoegen</button>
+        </div>
+
+        <div class="stats">
+          <div><span>Gedronken</span><b id="drunk">0 ml</b></div>
+          <div><span>Doel</span><b id="goalShow">1000 ml</b></div>
+          <div><span>Resterend</span><b id="left">1000 ml</b></div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card bottle-card">
+      <div class="bottle">
+        <div class="water" id="waterLevel"></div>
+      </div>
+
+      <div class="button-row center">
+        <button class="btn" id="fill">Vul 20%</button>
+        <button class="btn secondary" id="empty">Leeg</button>
+      </div>
+
+      <div class="muted center">
+        Batterij: <span id="battery">100%</span>
+      </div>
+    </aside>
+  </section>
+
+  <section id="product" class="card">
+    <h2>Product</h2>
+    <p>De SmartBottle meet waterinname en geeft herinneringen via een LED-ring.</p>
+  </section>
+
+  <section id="specificaties" class="card">
+    <h2>Specificaties</h2>
+    <ul>
+      <li>Materiaal: RVS + BPA-vrij</li>
+      <li>Capaciteit: 750 ml</li>
+      <li>Batterij: 200 mAh</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <input type="text" id="name" placeholder="Naam">
+    <input type="email" id="email" placeholder="E-mail">
+    <textarea id="message" placeholder="Bericht"></textarea>
+    <button class="btn" id="send">Verstuur</button>
+    <div class="muted" id="formMsg"></div>
+  </section>
+
+  <footer class="footer">
+    SmartBottle © 2025 — Schoolproject
+  </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
